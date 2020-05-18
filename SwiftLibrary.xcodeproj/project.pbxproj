@@ -11,6 +11,7 @@
 		763DE23B246E41470025D8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DE23A246E41470025D8EA /* ViewController.swift */; };
 		763DE240246E414A0025D8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763DE23F246E414A0025D8EA /* Assets.xcassets */; };
 		763DE243246E414A0025D8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763DE241246E414A0025D8EA /* LaunchScreen.storyboard */; };
+		DC7044982470EFA300574018 /* RxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7044972470EFA300574018 /* RxVC.swift */; };
 		FE6994059EFAFB4C4676CD73 /* Pods_CommonPods_SwiftLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BE7F23031C6A092B42BD45 /* Pods_CommonPods_SwiftLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		7D9F914990CB2265DA1EBF0E /* Pods-CommonPods-SwiftLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-SwiftLibrary.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-SwiftLibrary/Pods-CommonPods-SwiftLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		81BE7F23031C6A092B42BD45 /* Pods_CommonPods_SwiftLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_SwiftLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9E091972F2839B72020ACB /* Pods-CommonPods-SwiftLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-SwiftLibrary.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-SwiftLibrary/Pods-CommonPods-SwiftLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		DC7044972470EFA300574018 /* RxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,8 @@
 		763DE235246E41470025D8EA /* SwiftLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				DC7044962470EF7500574018 /* RXSwift */,
+				DC7044952470E39300574018 /* MVVM+RXSwift */,
 				763DE24B246E4A770025D8EA /* knowledgePoint */,
 				763DE24A246E415C0025D8EA /* system */,
 				763DE23A246E41470025D8EA /* ViewController.swift */,
@@ -101,6 +105,21 @@
 				763DE24C246E4A910025D8EA /* knowledgePoint.swift */,
 			);
 			path = knowledgePoint;
+			sourceTree = "<group>";
+		};
+		DC7044952470E39300574018 /* MVVM+RXSwift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MVVM+RXSwift";
+			sourceTree = "<group>";
+		};
+		DC7044962470EF7500574018 /* RXSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DC7044972470EFA300574018 /* RxVC.swift */,
+			);
+			path = RXSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7044982470EFA300574018 /* RxVC.swift in Sources */,
 				763DE23B246E41470025D8EA /* ViewController.swift in Sources */,
 				763DE237246E41470025D8EA /* AppDelegate.swift in Sources */,
 			);
@@ -358,6 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 958TTC3UU5;
 				INFOPLIST_FILE = SwiftLibrary/system/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 958TTC3UU5;
 				INFOPLIST_FILE = SwiftLibrary/system/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
