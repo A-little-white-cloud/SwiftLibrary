@@ -14,11 +14,11 @@ func testmultithreading() {
         
     }
     //串行队列
-    let syncQueue = DispatchQueue(label: "serialqueue")
+    _ = DispatchQueue(label: "serialqueue")
     ///全局并发队列
-    let asyncQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+    _ = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
     ///主队列
-    let mainQueue = DispatchQueue.main
+    _ = DispatchQueue.main
     
     DispatchQueue.global(qos: DispatchQoS.QoSClass.default).asyncAfter(deadline: DispatchTime.now() + 2.0) {
         
@@ -49,9 +49,7 @@ func testmultithreading() {
     queue.suspend()
     //继续队列
     queue.resume()
-    
-    
-    
+
     ///线程组
     let item = DispatchWorkItem {
         print("dispatch__4")
@@ -76,7 +74,6 @@ func testmultithreading() {
     
 }
 class multithreading {
-    
     
     init() {
         
